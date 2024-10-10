@@ -1,0 +1,17 @@
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: none;
+    color: white;
+}
+.Main-line {
+   text-align: center;
+   border-bottom: 5px solid rgb(13, 93, 205);
+   padding: 20px;
+   margin: 0;
+   font-size: 50px;
+}
+.Text-main {
+    text-align: center;
+    font-size: 30px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/001/206/478/original/music-flat-icon-vinyl-record-png.png">
+    <title>🎵🎵Favorite🎵🎵</title>
+    <link rel="stylesheet" href="/Css/Favorite.css">
+</head>
+
+<body>
+    <div class="navbar-main" style="border-bottom: 5px solid rgb(13, 93, 205);">
+        <h1
+            style="display: flex; justify-content: center; font-size: 75px; margin: 0; border-bottom: 5px solid rgb(13, 93, 205); color: rgb(0, 102, 255);">
+            Favorites</h1>
+        <div class="navbar-part">
+            <a href="/index.html" class="navbar"><b>Home</b></a>
+            <a href="About.html" class="navbar"><b>About</b></a>
+            <a href="#Favorite" class="navbar" id="active"><b>Favorite</b></a>
+            <a href="Music.html" class="navbar" ><b>Music</b></a>
+            <a href="login.html" class="navbar"><b>Login</b></a>
+            <a href="register.html" class="navbar"><b>Register</b></a>
+            <a href="genres.html" class="navbar"><b>Genres</b></a>
+        </div>
+    </div>
+    <div class="card-row">
+        <div id="favoriteTracksContainer"></div>
+    </div>
+    <div class="footer-text">
+        <h1>Những bài hát được bạn yêu thích sẽ xuất hiện tại đây</h1>
+        <h2>Nếu bạn chưa có bài hát yêu thích của riêng mình hãy thưởng thức thử các bản nhạc TẾT thú vị ở phần<br><a
+                href="Music.html" style="text-decoration: none; color: rgb(160, 3, 144);">Music</a></h2>
+    </div>
+
+    <div class="Footer">
+        <ol>
+            <div>
+                <li class="footer-main">Đội ngũ thiết kế Web:</li>
+                <br>
+                <ul>
+                    <li><a>Phan Nhật Hưng</a></li>
+                    <li><a>Nguyễn Bình Minh</a></li>
+                    <li><a>Mindx</a></li>
+                    <li><a>W3school</a></li>
+                </ul>
+            </div>
+            <div>
+                <li class="footer-main">Cộng đồng:</li>
+                <br>
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="footer-part">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" class="footer-part">Youtube</a></li>
+                    <li><a href="https://x.com/?mx=2" class="footer-part">Twitter(X)</a></li>
+                    <li><a href="https://www.instagram.com/" class="footer-part">Instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <li class="footer-main">Hỗ trợ người dùng:</li>
+                <br>
+                <ul>
+                    <li><a href="mailto:abc@gmail.com" class="footer-part">Nói chuyện với nhà phát triển</a></li>
+                    <li><a href="./Html/About.html" class="footer-part">Hướng dẫn cách sử dụng webiste</a></li>
+                    <li><a href="mailto:abc@gmail.com" class="footer-part">Thông báo lỗi</a></li>
+                    <li><a href="mailto:abc@gmail.com" class="footer-part">Tư vấn người dùng</a></li>
+                </ul>
+            </div>
+            <div>
+                <li class="footer-main">Tài trợ bởi:</li>
+                <br>
+                <ul>
+                    <li><a href="https://open.spotify.com/" class="footer-part">Spotify</a></li>
+                    <li><a href="https://firebase.google.com/" class="footer-part">Firebase</a></li>
+                    <li><a href="https://www.w3schools.com/" class="footer-part">W3school</a></li>
+
+                </ul>
+            </div>
+        </ol>
+    </div>
+</body>
+<script>
+    
+    
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const favoriteTracksContainer = document.getElementById('favoriteTracksContainer');
+        favoriteTracksContainer.innerHTML = ''; // Clear previous content
+
+        // Loop through localStorage to retrieve favorite tracks
+        for (let i = 0; i < localStorage.length; i++) {
+            const trackId = localStorage.key(i);
+            const favoriteInfo = JSON.parse(localStorage.getItem(trackId));
+            // const isFavorited = localStorage.getItem(trackId) === 'true';
+
+            if (favoriteInfo) {
+            const { trackName, imageName, artist} = favoriteInfo;
+
+            // Create a card for each favorite track
+            const trackCardHTML = `
+                <div class="track-card">
+                    <img src="${imageName}" alt="Track Image">
+                    <div class="details">
+                        <h2>${trackName}</h2>
+                        <p>${artist}</p>
+                        <iframe src="https://open.spotify.com/embed/track/${trackId}" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            `;
+            favoriteTracksContainer.innerHTML += trackCardHTML;
+        }
+        }
+    });
+</script>
+
+</html>

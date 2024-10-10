@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/001/206/478/original/music-flat-icon-vinyl-record-png.png">
+    <title>Register</title>
+    <style>
+        form {
+           border: 1px solid black;
+           display: flex;
+           flex-direction: column;
+           width: fit-content;
+           margin: auto;
+           padding: 100px;
+           background-color: rgb(0, 253, 173);
+           box-shadow: 1px 1px 1px 1px rgba(117, 117, 112, 0.779);
+           margin-top: 100px;
+        }
+        body {
+            background-image: url(https://img.freepik.com/fotos-premium/fondo-acordes-musica-notas-musicales-elegantes-vector-libre_1019380-177.jpg);
+            background-size: 100%;
+        }
+        .account {
+            border-radius: 8px;
+            background-color: white;
+            height: 30px;
+            /* width: 250px; */
+        }
+        .account:hover {
+            box-shadow: 2px 1px 1px 2px #6b6868 ;
+        }
+        h1 {
+            text-align: center;
+            font-family:  'Arial Narrow Bold', sans-serif;
+        }
+        #button {
+            height: 40px;
+            font-size: 20px;
+            background-color: yellow;
+            color: red;
+        }
+        #button:hover {
+            box-shadow: 1px 1px 1px 1px #6b6868 ;
+        }
+        span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="registerForm">
+        <h1>🌸🌸Đăng ký tài khoản🌸🌸</h1>
+        <label for="username">Tên người dùng:</label>
+        <input class="account" id="username" type="text" placeholder="Username của bạn" required>
+        <label for="password">Mật khẩu:</label>
+        <input class="account" id="password" type="password" placeholder="Password của bạn" required>
+        <label for="repassword">Nhập lại mật khẩu:</label>
+        <input class="account" id="repassword" type="password" placeholder="Nhập lại mật khẩu" required>
+        <label for="email">Email:</label>
+        <input class="account" id="email" type="email" placeholder="Email của bạn" required>
+        <br>
+        <button id="button" type="submit"><b>Đăng ký</b></button>
+        <br>
+        <span>Bạn đã có tài khoản hãy <a href="login.html">Đăng nhập tài khoản</a> của bạn.</span>
+    </form>
+    <!-- <script src="register.js"></script> -->
+</body>
+<script src="/Javascripts/register.js" type="module"></script>
+</html>

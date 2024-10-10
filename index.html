@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png"
+        href="https://static.vecteezy.com/system/resources/previews/001/206/478/original/music-flat-icon-vinyl-record-png.png">
+    <title>🎵🎵Main Page MUSICFES🎵🎵</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- làm theo mẫu -->
+    <!-- <div> -->
+    <!-- <span>Bài hát</span> -->
+    <!-- <span>Được sáng tác bởi</span> -->
+    <!-- </div> -->
+    <div class="navbar-main">
+        <h1
+            style="text-align: center; border-bottom: 5px solid rgb(13, 93, 205); font-size: 75px; margin: 0; color: rgb(0, 102, 255);">
+            🎶🎶MUSICFES🎶🎶</h1>
+        <div class="navbar-part" style="justify-content: space-between;">
+            <div></div>
+            <div class="nav-item" style="display: flex; right: -100px; position: relative;">
+                <a href="#home" class="navbar" id="active"><b>Home</b></a>
+                <a href="./Html/About.html" class="navbar"><b>About</b></a>
+                <a href="./Html/Favorite.html" class="navbar"><b>Favorite</b></a>
+                <a href="./Html/Music.html" class="navbar"><b>Music</b></a>
+
+                <a href="./Html/genres.html" class="navbar"><b>Genres</b></a>
+            </div>
+            <div class="login-signup" style="display: flex; ">
+                <a href="./Html/login.html" class="navbar"><b>Login</b></a>
+               <a href="./Html/register.html" class="navbar"><b>Register</b></a>
+
+           </div>       
+        </div>
+
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://moewalls.com/wp-content/uploads/2022/08/arona-underwater-classroom-blue-archive-thumb.jpg"
+                style="width:1000px ; height:600px">
+            <div class="text">Tận hưởng các bài nhạc<br>mà bạn yêu thích ngay hôm nay</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://ticketgo.vn/photos/70/hinhanh-tintuc/5d30234788c47.jpg"
+                style="width:1000px ; height:600px">
+            <div class="text">Lắng nghe bài hát của ca sĩ mà bạn yêu thích</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://i0.wp.com/hellovpop.com/wp-content/uploads/2019/07/son-tung-2.jpg?fit=1500%2C1000&ssl=1"
+                style="width:1000px ; height:600px">
+            <div class="text">Chúng tôi sẽ cố gắng hết sức cải thiện website tốt hơn</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <div class="upload-bt">
+        <butto id="upload-bt" onclick="window.location = '/Html/Upload.html'"><span class="material-symbols-outlined">
+                upload
+            </span></button>
+    </div>
+
+
+    <!-- khu vực này chia ra -->
+    <div class="Article-Text">
+        <h1>🎶🎶Chào mừng đến với MUSICFES🎶🎶</h1>
+        <h2 style="text-decoration: underline; margin-left: 25px;">Top 10 Bài hát được yêu thích nhất</h2>
+    </div>
+    <!-- Nhạc Yêu thích -->
+    <div class="Tet-song">
+        <div class="playlist-container row" id="playlistContainer">
+            <div class="track-card">
+                <img src="https://avatar-ex-swe.nixcdn.com/song/2024/02/28/e/3/6/9/1709132786763_640.jpg"
+                    alt="${track.name}">
+                <div class="details">
+                    <h2>Pho real</h2>
+                    <p>Low G, Anh Phan, bbno$</p>
+                    <button class="favorite-button">❤</button>
+                </div>
+                <iframe style="display: flex; justify-content: flex-end;"
+                    src="https://open.spotify.com/embed/track/0OIed6UFpfT2nW4BffD7Js" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <!-- TÂM ĐIỂM CHÚ Ý -->
+        <div>
+            <h2 class="Article-Text"
+                style="padding: 20px; margin: 0; text-decoration: underline; font-size: 36px; font-weight: bolder; ">Đây
+                là top 3 bài hát được đánh giá hay nhất năm 2024</h2>
+            <div class="scoreboard-row">
+                <div class="track-card">
+                    <img src="https://avatar-ex-swe.nixcdn.com/song/2024/02/28/e/3/6/9/1709132786763_640.jpg"
+                        alt="${track.name}">
+                    <div class="details">
+                        <h2>Pho real</h2>
+                        <p>Low G, Anh Phan, bbno$</p>
+                        <button class="favorite-button">❤</button>
+                    </div>
+                    <iframe src="https://open.spotify.com/embed/track/0OIed6UFpfT2nW4BffD7Js"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div class="track-card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0206a4d1fd269dc47911d37eb3" alt="${track.name}">
+                    <div class="details">
+                        <h2>Âm thầm bên em</h2>
+                        <p>Sơn tùng MTP</p>
+                        <button class="favorite-button">❤</button>
+                    </div>
+                    <iframe src="https://open.spotify.com/embed/track/0tWqngfOXKN1xOlYK4WwVw"
+                        allow="encrypted-media"></iframe>
+                </div>
+                <div class="track-card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273a621606cf248157581a03cbc" alt="${track.name}">
+                    <div class="details">
+                        <h2>Blue Archive OST 59</h2>
+                        <p>Yoko</p>
+                        <button class="favorite-button">❤</button>
+                    </div>
+                    <iframe src="https://open.spotify.com/embed/track/3QRdzUlyC6Ae5ZL10zpBvY"
+                        allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="Article-Text">
+            <h2>Nếu bạn muốn thưởng thức thêm các bài hát khác có trên website hãy nhấn vào đây để chuyển sang trang
+                Music:<br>
+                <div>
+                    <!-- <a href="Music.html"
+                    style="text-decoration: none;">Xem thêm<span
+                        class="material-symbols-outlined">chevron_right</span></a></h2> -->
+                    <button onclick="document.location = './html/Music.html'" id="more">Xem thêm</button>
+                </div>
+        </div>
+        <!-- TEXT -->
+
+        <!-- Footer -->
+        <div class="Footer">
+            <ol>
+                <div>
+                    <li class="footer-main">Đội ngũ thiết kế Web:</li>
+                    <br>
+                    <ul>
+                        <li><a>Phan Nhật Hưng</a></li>
+                        <li><a>Nguyễn Bình Minh</a></li>
+                        <li><a>Mindx</a></li>
+                        <li><a>W3school</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <li class="footer-main">Cộng đồng:</li>
+                    <br>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" class="footer-part">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/" class="footer-part">Youtube</a></li>
+                        <li><a href="https://x.com/?mx=2" class="footer-part">Twitter(X)</a></li>
+                        <li><a href="https://www.instagram.com/" class="footer-part">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <li class="footer-main">Hỗ trợ người dùng:</li>
+                    <br>
+                    <ul>
+                        <li><a href="mailto:abc@gmail.com" class="footer-part">Nói chuyện với nhà phát triển</a></li>
+                        <li><a href="./Html/About.html" class="footer-part">Hướng dẫn cách sử dụng webiste</a></li>
+                        <li><a href="mailto:abc@gmail.com" class="footer-part">Thông báo lỗi</a></li>
+                        <li><a href="mailto:abc@gmail.com" class="footer-part">Tư vấn người dùng</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <li class="footer-main">Tài trợ bởi:</li>
+                    <br>
+                    <ul>
+                        <li><a href="https://open.spotify.com/" class="footer-part">Spotify</a></li>
+                        <li><a href="https://firebase.google.com/" class="footer-part">Firebase</a></li>
+                        <li><a href="https://www.w3schools.com/" class="footer-part">W3school</a></li>
+
+                    </ul>
+                </div>
+            </ol>
+        </div>
+</body>
+<!-- <script src="spotify.js"></script> -->
+<script src="app.js"></script>
+
+</html>

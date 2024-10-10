@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/001/206/478/original/music-flat-icon-vinyl-record-png.png">
+    <title>Genres MUSICFES🎵🎵</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/Css/genres.css">
+</head>
+<body>
+    <div class="navbar-main">
+        <h1
+            style="text-align: center; border-bottom: 5px solid rgb(13, 93, 205); font-size: 75px; margin: 0; color: rgb(0, 102, 255);">
+            GENRES</h1>
+        <div class="navbar-part">
+            <a href="/index.html" class="navbar"><b>Home</b></a>
+            <a href="About.html" class="navbar"><b>About</b></a>
+            <a href="Favorite.html" class="navbar"><b>Favorite</b></a>
+            <a href="Music.html" class="navbar" ><b>Music</b></a>
+            <a href="login.html" class="navbar"><b>Login</b></a>
+            <a href="register.html" class="navbar"><b>Register</b></a>
+            <a href="#genres" class="navbar" id="active"><b>Genres</b></a>
+        </div>
+    </div>
+<div class="Flex-space">
+    <div class="container">        
+        <form action="">
+            <input type="hidden" id='hidden_token'>
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="Genre" class="form-label col-sm-2" style="padding-right: 20px;">Genre:</label><br>
+                <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                    <option>Select...</option>                    
+                </select>
+            </div>
+            <div class="col-sm-6 form-group row px-0">
+                <label for="Genre" class="form-label col-sm-2" style="padding-right:20px ;">Playlists:</label><br>
+                <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
+                    <option>Select...</option>                    
+                </select>
+            </div>                  
+            <div class="col-sm-6 row form-group px-0">
+                <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Search</button>
+            </div>          
+        </form>        
+        <div class="row">
+            <div class="col-sm-6 px-0">
+                <div class="list-group song-list">
+                    
+                </div>                                             
+            </div>
+            <div class="offset-md-1 col-sm-4" id="song-detail">                
+            </div>
+        </div>   
+    </div>
+    <!-- Footer -->
+    <div class="Footer">
+        <ol>
+            <div>
+                <li class="footer-main">Đội ngũ thiết kế Web:</li>
+                <br>
+                <ul>
+                    <li><a>Phan Nhật Hưng</a></li>
+                    <li><a>Nguyễn Bình Minh</a></li>
+                    <li><a>Mindx</a></li>
+                    <li><a>W3school</a></li>
+                </ul>
+            </div>
+            <div>
+                <li class="footer-main">Cộng đồng:</li>
+                <br>
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="footer-part">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" class="footer-part">Youtube</a></li>
+                    <li><a href="https://x.com/?mx=2" class="footer-part">Twitter(X)</a></li>
+                    <li><a href="https://www.instagram.com/" class="footer-part">Instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <li class="footer-main">Hỗ trợ người dùng:</li>
+                <br>
+                <ul>
+                    <li><a href="mailto:abc@gmail.com" class="footer-part">Nói chuyện với nhà phát triển</a></li>
+                    <li><a href="./Html/About.html" class="footer-part">Hướng dẫn cách sử dụng webiste</a></li>
+                    <li><a href="mailto:abc@gmail.com" class="footer-part">Thông báo lỗi</a></li>
+                    <li><a href="mailto:abc@gmail.com" class="footer-part">Tư vấn người dùng</a></li>
+                </ul>
+            </div>
+            <div>
+                <li class="footer-main">Tài trợ bởi:</li>
+                <br>
+                <ul>
+                    <li><a href="https://open.spotify.com/" class="footer-part">Spotify</a></li>
+                    <li><a href="https://firebase.google.com/" class="footer-part">Firebase</a></li>
+                    <li><a href="https://www.w3schools.com/" class="footer-part">W3school</a></li>
+
+                </ul>
+            </div>
+        </ol>
+    </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="genres.js" type="text/javascript"></script> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="genres.js" type="text/javascript"></script>
+</html>
